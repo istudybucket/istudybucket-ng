@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {COUNTRY_CODES, ROLES} from "../constants";
 
 @Component({
   selector: 'app-register-form',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register-form.component.css']
 })
 export class RegisterFormComponent implements OnInit {
-
-  constructor() { }
+  countryCodes: any;
+  roles: Array<string>;
+  constructor() {
+    this.countryCodes = COUNTRY_CODES;
+    this.roles = ROLES;
+  }
 
   ngOnInit(): void {
   }
