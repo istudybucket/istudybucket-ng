@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {APP_TITLE} from "../../../konsts";
 
 @Component({
   selector: 'app-nav-landing',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-landing.component.css']
 })
 export class NavLandingComponent implements OnInit {
+  appTitle: string;
 
-  constructor() { }
+  constructor() {
+    this.appTitle = APP_TITLE;
+  }
 
   ngOnInit(): void {
   }
