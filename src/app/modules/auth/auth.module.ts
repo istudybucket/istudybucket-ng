@@ -4,13 +4,17 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
+import { LoginTitleComponent } from './login-title/login-title.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     RegisterComponent,
     RegisterFormComponent,
-    RegisterTitleComponent
+    RegisterTitleComponent,
+    LoginTitleComponent,
+    LoginFormComponent
   ],
   imports: [
     CommonModule
