@@ -1,1 +1,73 @@
-<p>main-landing works!</p>
+<div>
+  <!--Wrap the whole landing in a blue bg -->
+  <div class="header-blue">
+    <!-- nav landing component -->
+    <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+
+      <div class="container">
+        <a class="navbar-brand" href="#">iStudyBucket</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Actual navigation items -->
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" href="#">Link Example</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a>
+                <a class="dropdown-item" role="presentation" href="#">Third Item</a>
+              </div>
+            </li>
+          </ul>
+          <!-- Search -->
+          <form class="form-inline mr-auto" target="_self">
+            <div class="form-group">
+              <label for="search-field">
+                <i class="fa fa-search"></i>
+              </label>
+              <input class="form-control search-field" type="search" name="search" id="search-field">
+            </div>
+          </form>
+
+
+          <!-- login and signup buttons -->
+          <span class="navbar-text">
+            <a href="#" class="login">
+              Login
+            </a>
+          </span>
+          <a class="btn btn-light action-button" role="button" href="#">
+            Register
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero landing component -->
+    <div class="container-hero">
+      <div class="row">
+
+        <!-- text section -->
+        <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+          <h1>The revolution is here</h1>
+          <p>Lorem my ipsum my big head is stupid and I am so fuckin tired!</p>
+          <button class="btn btn-light btn-lg action-button" type="button">Learn More</button>
+        </div>
+
+        <!-- image section -->
+        <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+          <div class="iphone-mockup">
+            <img src="iphone-image" class="device">
+            <div class="screen"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
