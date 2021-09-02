@@ -7,7 +7,7 @@ import {COUNTRY_CODES, ROLES} from "../constants";
   styleUrls: ['./register-form.component.css']
 })
 export class RegisterFormComponent implements OnInit {
-  countryCodes: any;
+  countryCodes: Array<number>;
   roles: Array<string>;
   constructor() {
     this.countryCodes = COUNTRY_CODES;
