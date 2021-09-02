@@ -1,0 +1,78 @@
+.hero {
+  margin-top:20px;
+  text-align:center;
+}
+
+@media (min-width:768px) {
+  .hero {
+    margin-top:60px;
+    text-align:left;
+  }
+}
+
+.hero h1 {
+  color:#fff;
+  font-size:40px;
+  margin-top:0;
+  margin-bottom:15px;
+  font-weight:300;
+  line-height:1.4;
+}
+
+@media (min-width:992px) {
+  .hero h1 {
+    margin-top:190px;
+    margin-bottom:24px;
+    line-height:1.2;
+  }
+}
+
+.hero p {
+  color:rgba(255,255,255,0.8);
+  font-size:20px;
+  margin-bottom:30px;
+  font-weight:300;
+}
+
+.phone-holder {
+  text-align:right;
+}
+
+div.iphone-mockup {
+  position:relative;
+  max-width:300px;
+  margin:20px;
+  display:inline-block;
+}
+
+.iphone-mockup img.device {
+  width:100%;
+  height:auto;
+}
+
+.iphone-mockup .screen {
+  position:absolute;
+  width:88%;
+  height:77%;
+  top:12%;
+  border-radius:2px;
+  left:6%;
+  border:1px solid #444;
+  background-color:#aaa;
+  overflow:hidden;
+  /** background:url(src/assets/img/iphone.svg); **/
+  background-size:cover;
+  background-position:center;
+}
+
+.iphone-mockup .screen:before {
+  content:'';
+  background-color:#fff;
+  position:absolute;
+  width:70%;
+  height:140%;
+  top:-12%;
+  right:-60%;
+  transform:rotate(-19deg);
+  opacity:0.2;
+}
