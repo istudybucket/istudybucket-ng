@@ -1,0 +1,29 @@
+<h1>Sign in/up form</h1>
+<div class="container" id="container" #container>
+  <!-- register form -->
+  <div class="form-container sign-up-container">
+    <app-register-form></app-register-form>
+  </div>
+  <!-- login form -->
+  <div class="form-container sign-in-container">
+    <app-register-form></app-register-form>
+  </div>
+
+  <div class="overlay-container">
+    <div class="overlay">
+      <!-- left overlay panel -->
+      <div class="overlay-panel overlay-left">
+        <h2>Welcome Back!</h2>
+        <p>To keep connected with us, please login with your personal info</p>
+        <button class="ghost" id="signin" (click)="activatePanelSwitch(container)">Sign In</button>
+      </div>
+      <!-- right overlay panel -->
+      <div class="overlay-panel overlay-right">
+        <h2>Hello, Friend!</h2>
+        <p>Enter your personal details and start journey with us</p>
+        <button class="ghost" id="signup" (click)="activatePanelSwitch(container)">Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+</div>

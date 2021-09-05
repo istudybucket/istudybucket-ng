@@ -12,13 +12,15 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatDividerModule} from "@angular/material/divider";
 import {DividerModule} from "primeng/divider";
 import {SplitterModule} from "primeng/splitter";
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     RegisterComponent,
     RegisterFormComponent,
-    RegisterTitleComponent
+    RegisterTitleComponent,
+    AuthComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +37,8 @@ import {SplitterModule} from "primeng/splitter";
     LoginComponent,
     RegisterComponent,
     RegisterTitleComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    AuthComponent
   ]
 })
 export class AuthModule { }
