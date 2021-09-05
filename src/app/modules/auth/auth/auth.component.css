@@ -6,7 +6,7 @@ main colors
   box-sizing: border-box;
 }
 
-body {
+.auth-body {
   background: #f6f5f7;
   display: flex;
   justify-content: center;
@@ -47,9 +47,10 @@ a {
 }
 
 button {
-  border-radius: 20px;
-  border: 1px solid #3718e7;
-  background-color: #3718e7;
+  /*border-radius: 20px;*/
+  border-radius: 0;
+  border: 1px solid #4b69ff;
+  background-color: #4b69ff;
   color: #FFFFFF;
   font-size: 12px;
   font-weight: bold;
@@ -72,7 +73,7 @@ button.ghost {
   border-color: #FFFFFF;
 }
 
-form {
+.auth-form {
   background-color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -162,9 +163,9 @@ input {
 }
 
 .overlay {
-  background: #7a19ff;
-  background: -webkit-linear-gradient(to right, #3718e7, #7a19ff);
-  background: linear-gradient(to right, #3718e7, #7a19ff);
+  background: #ff1af2;
+  background: -webkit-linear-gradient(to right, #4b69ff, #ff1af2);
+  background: linear-gradient(to right, #4b69ff, #ff1af2);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -212,5 +213,4 @@ input {
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
 }
-
 

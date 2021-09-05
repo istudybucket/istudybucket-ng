@@ -14,6 +14,10 @@ export class AuthComponent implements OnInit {
 
   activatePanelSwitch(container: HTMLDivElement): void {
     container.classList.add("right-panel-active");
+    console.log("container switched");
   }
 
+  activatePanelUnSwitch(container: HTMLDivElement) {
+    container.classList.remove("right-panel-active");
+  }
 }

@@ -1,29 +1,35 @@
-<h1>Sign in/up form</h1>
-<div class="container" id="container" #container>
-  <!-- register form -->
-  <div class="form-container sign-up-container">
-    <app-register-form></app-register-form>
-  </div>
-  <!-- login form -->
-  <div class="form-container sign-in-container">
-    <app-register-form></app-register-form>
-  </div>
 
-  <div class="overlay-container">
-    <div class="overlay">
-      <!-- left overlay panel -->
-      <div class="overlay-panel overlay-left">
-        <h2>Welcome Back!</h2>
-        <p>To keep connected with us, please login with your personal info</p>
-        <button class="ghost" id="signin" (click)="activatePanelSwitch(container)">Sign In</button>
+<div class="auth-body">
+  <h1>Sign in/up form</h1>
+  <div class="container" id="container" #container>
+    <div class="row">
+      <!-- register form -->
+      <div class="form-container sign-up-container col-lg-6 ">
+        <app-register-form class="auth-form"></app-register-form>
       </div>
-      <!-- right overlay panel -->
-      <div class="overlay-panel overlay-right">
-        <h2>Hello, Friend!</h2>
-        <p>Enter your personal details and start journey with us</p>
-        <button class="ghost" id="signup" (click)="activatePanelSwitch(container)">Sign Up</button>
+      <!-- login form -->
+      <div class="form-container sign-in-container col-lg-6">
+        <app-login-form class="auth-form"></app-login-form>
       </div>
     </div>
-  </div>
 
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <!-- left overlay panel -->
+        <div class="overlay-panel overlay-left ">
+          <h2>Welcome Back!</h2>
+          <p>To keep connected, please login with your personal info</p>
+          <button class="ghost" id="signin" (click)="activatePanelUnSwitch(container)">Sign In</button>
+        </div>
+        <!-- right overlay panel -->
+        <div class="overlay-panel overlay-right">
+          <h2>Ayo!</h2>
+          <p>Enter your personal details and register your account</p>
+          <button class="ghost" id="signup" (click)="activatePanelSwitch(container)">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
