@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {COUNTRY_CODES, ROLES} from "../constants";
+import {MatFormField, MatFormFieldAppearance} from "@angular/material/form-field";
 
 @Component({
   selector: 'app-register-form',
@@ -9,6 +10,7 @@ import {COUNTRY_CODES, ROLES} from "../constants";
 export class RegisterFormComponent implements OnInit {
   countryCodes: Array<number>;
   roles: Array<string>;
+
   constructor() {
     this.countryCodes = COUNTRY_CODES;
     this.roles = ROLES;

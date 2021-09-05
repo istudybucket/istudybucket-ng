@@ -4,6 +4,14 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { RegisterTitleComponent } from './register-title/register-title.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatIconModule} from "@angular/material/icon";
+import {FormsModule} from "@angular/forms";
+import {MatButtonModule} from "@angular/material/button";
+import {MatDividerModule} from "@angular/material/divider";
+import {DividerModule} from "primeng/divider";
+import {SplitterModule} from "primeng/splitter";
 
 @NgModule({
   declarations: [
@@ -13,7 +21,15 @@ import { RegisterTitleComponent } from './register-title/register-title.componen
     RegisterTitleComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    FormsModule,
+    MatButtonModule,
+    MatDividerModule,
+    DividerModule,
+    SplitterModule
   ],
   exports: [
     LoginComponent,

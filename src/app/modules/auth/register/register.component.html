@@ -1,10 +1,10 @@
 <div class="container">
-  <div class="row py-5 mt-4 align-items-center">
-    <!-- Registration title -->
-    <app-register-title></app-register-title>
-
-    <!-- Registeration form -->
-    <app-register-form></app-register-form>
-
-  </div>
+  <p-splitter [style]="{'height': '100%'}" [panelSizes]="[50,50]" layout="horizontal">
+    <ng-template pTemplate>
+      <app-register-title></app-register-title>
+    </ng-template>
+    <ng-template pTemplate>
+      <app-register-form></app-register-form>
+    </ng-template>
+  </p-splitter>
 </div>
