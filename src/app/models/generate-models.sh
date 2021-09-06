@@ -23,8 +23,7 @@
 #       DEFINE FILES AND VARIABLES HERE
 ############################################################
 
-
-
+FILES=( "Bucket" "User" "Address" "Chat" "Message" "Comment" "Post" )
 
 ############################################################
 #       DEFINE FUNCTIONS HERE
@@ -37,8 +36,13 @@
 ############################################################
 
 
-for arg in $@; do
-  touch "$arg.ts"
+for FILE in ${FILES[@]}; do
+  touch "$FILE.ts"
+  echo "currently on $FILE"
+  echo "export class $FILE {}" > "$FILE.ts"
+  git add "$FILE.ts"
+  git commit -m "added $FILE model"
+  done
 
 
 

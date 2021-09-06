@@ -11,12 +11,18 @@ import {DividerModule} from "primeng/divider";
 import {SplitterModule} from "primeng/splitter";
 import { AuthComponent } from './auth/auth.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { FormBoxComponent } from './form-box/form-box.component';
+import {FlexModule} from "@angular/flex-layout";
+import {MatCardModule} from "@angular/material/card";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
     RegisterFormComponent,
     AuthComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    FormBoxComponent
   ],
   imports: [
     CommonModule,
@@ -27,11 +33,17 @@ import { LoginFormComponent } from './login-form/login-form.component';
     MatButtonModule,
     MatDividerModule,
     DividerModule,
-    SplitterModule
+    SplitterModule,
+    FlexModule,
+    MatCardModule,
+    MatToolbarModule,
+    RouterModule
   ],
   exports: [
     RegisterFormComponent,
-    AuthComponent
+    AuthComponent,
+    LoginFormComponent,
+    FormBoxComponent
   ]
 })
 export class AuthModule { }

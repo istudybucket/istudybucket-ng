@@ -1,23 +1,31 @@
-<form>
-  <div class="row">
-    <!-- username or email -->
-    <div class="form-group col-lg-12 mb-4">
-      <mat-form-field appearance="fill" class="full-width">
-        <mat-label>Email or Username</mat-label>
-        <input type="text" matInput placeholder="Ex. john.doe" class="p-fluid">
-        <mat-icon matSuffix>person</mat-icon>
-      </mat-form-field>
+<div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <!-- header section -->
+    <mat-card-header>
+      <mat-card-title>Log In</mat-card-title>
+    </mat-card-header>
+
+    <!-- form section -->
+    <form class="login-form">
+      <mat-card-content>
+        <!-- username field -->
+        <mat-form-field class="full-width">
+          <mat-label>Username</mat-label>
+          <input type="text" name="username" matInput placeholder="Ex. johndoe">
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <!-- password field -->
+        <mat-form-field class="full-width">
+          <mat-label>Password</mat-label>
+          <input type="password" name="userpass" matInput>
+          <mat-icon matSuffix>lock</mat-icon>
+        </mat-form-field>
+      </mat-card-content>
+
       <mat-form-field>
-        <mat-label>Password</mat-label>
-        <input type="text" matInput class="p-fluid">
-        <mat-icon matSuffix>lock</mat-icon>
+        <button mat-raised-button color="primary" class="btn-block form-btn">Login</button>
       </mat-form-field>
-
-    </div>
-
-    <!-- submit button -->
-    <div class="form-group col-lg-12 mx-auto mb-0">
-      <button mat-raised-button color="primary" class="btn-primary full-width form-btn">Login</button>
-    </div>
-  </div>
-</form>
+    </form>
+  </mat-card>
+</div>
