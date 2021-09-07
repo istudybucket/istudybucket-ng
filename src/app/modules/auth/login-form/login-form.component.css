@@ -1,0 +1,9 @@
+.form-control {
+  border-width: 0;
+  background-color: inherit;
+}
+
+.mat-form-btn {
+  border-radius: 0;
+  width: 100%;
+}
