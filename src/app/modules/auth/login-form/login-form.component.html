@@ -12,7 +12,7 @@
   <!-- password -->
   <div class="row mt-4 mb-4">
     <div class="col-lg-12 form-group">
-      <mat-form-field appearance="legacy" class="form-control mat-form-control">
+      <mat-form-field appearance="legacy" class="form-control">
         <mat-label>Password</mat-label>
         <input matInput [type]="hidePassword ? 'password' : 'text'" name="password">
         <button mat-icon-button matSuffix type="button" (click)="invertHide()" [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hidePassword">
@@ -25,18 +25,18 @@
   <!-- submit button mt-4 mb-4 -->
   <div class="row ">
     <!-- buttons -->
-    <div class="col-lg-6 col-sm-6 form-group">
+    <div class="col-lg-6 form-group">
       <div class="btn btn-block">
         <button type="button" mat-raised-button color="primary" class="mat-form-btn login-btn">Login</button>
       </div>
     </div>
-    <div class="col-lg-6 col-sm-6 form-group cta">
+    <div class="col-lg-6 form-group cta">
       <div class="btn btn-block">
         <button type="button"
                 mat-raised-button
                 color="accent"
                 (click)="switchToRegister()"
-                class="mat-form-btn switch-btn">I'm new</button>
+                class="mat-form-btn switch-btn">New? Register</button>
       </div>
     </div>
   </div>

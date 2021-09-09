@@ -8,11 +8,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {AuthModule} from "../auth/auth.module";
+import { NavLogoComponent } from './nav-logo/nav-logo.component';
+import { NavAreaComponent } from './nav-area/nav-area.component';
 
 
 
 @NgModule({
-    declarations: [MainNavComponent],
+    declarations: [MainNavComponent, NavLogoComponent, NavAreaComponent],
     exports: [
         MainNavComponent
     ],

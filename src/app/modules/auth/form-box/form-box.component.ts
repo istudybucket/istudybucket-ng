@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormBoxComponent implements OnInit {
 
-  constructor() { }
+  showLogin: boolean;
+
+  constructor() {
+    this.showLogin = true;
+
+  }
 
   ngOnInit(): void {
+  }
+
+  displayForm($event: boolean) {
+    this.showLogin = $event;
   }
 
 }

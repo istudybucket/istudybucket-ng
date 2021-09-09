@@ -17,15 +17,15 @@
   <div class="col-lg-6 col-md-6 col-xs-12">
     <div class="form-bg">
       <!-- login form -->
-      <div class="form-area" #loginForm>
+      <div class="form-area {{showLogin ? '' : 'd-none'}}">
         <app-form-title title-heading="Login" title-body="body"></app-form-title>
-        <app-login-form reg-form="{{registerForm}}" log-form="{{loginForm}}"></app-login-form>
+        <app-login-form (displayLog)="displayForm($event)"></app-login-form>
       </div>
 
       <!-- register form -->
-      <div class="form-area d-none" #registerForm>
+      <div class="form-area {{showLogin ? 'd-none' : ''}}">
         <app-form-title title-heading="Register" title-body="body"></app-form-title>
-        <app-register-form reg-form="{{registerForm}}" log-form="{{loginForm}}"></app-register-form>
+        <app-register-form (displayLog)="displayForm($event)" ></app-register-form>
       </div>
     </div>
   </div>
