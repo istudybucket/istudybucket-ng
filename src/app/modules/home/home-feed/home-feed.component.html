@@ -1,0 +1,128 @@
+<div class=" container feed-body">
+  <div class="post mb-2">
+    <mat-card class="card">
+      <mat-card-header class="card-header">
+        <div mat-card-avatar class="author-image"></div>
+        <mat-card-title class="card-title">Title</mat-card-title>
+        <mat-card-subtitle class="card-subtitle">Subtitle</mat-card-subtitle>
+        <span class="spacer"></span>
+        <button type="button" mat-icon-button>
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+      </mat-card-header>
+
+      <!-- divider -->
+      <mat-divider></mat-divider>
+      <!--
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+      -->
+      <mat-card-content class="card-body">
+        <div class="">
+          This is a simple test post for the feed section
+        </div>
+      </mat-card-content>
+
+      <!-- divider -->
+      <mat-divider></mat-divider>
+
+      <!-- card actions -->
+      <mat-card-actions class="m-auto">
+        <mat-list class="d-flex">
+          <mat-list-item>
+            <button mat-stroked-button class="downvote-btn btn mx-auto">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-list-item >
+          <mat-list-item>
+            <button mat-stroked-button class="comment-btn btn mx-auto">
+              <mat-icon>comment</mat-icon>
+            </button>
+          </mat-list-item>
+          <mat-list-item>
+            <button mat-stroked-button class="upvote-btn btn mx-auto">
+              <mat-icon>check</mat-icon>
+            </button>
+          </mat-list-item>
+        </mat-list>
+
+      </mat-card-actions>
+
+      <mat-card-footer class="card-footer ">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <input class="form-control comment-field" type="text">
+          </div>
+          <div class="col-2 m-auto">
+            <button type="button" mat-icon-button color="primary" class="btn">
+              <mat-icon >send</mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+
+
+  <div class="post">
+    <mat-card class="card">
+      <mat-card-header class="card-header">
+        <div mat-card-avatar class="author-image"></div>
+        <mat-card-title class="card-title">Post 2</mat-card-title>
+        <mat-card-subtitle class="card-subtitle">Subtitle 2</mat-card-subtitle>
+        <span class="spacer"></span>
+        <button type="button" mat-icon-button>
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+      </mat-card-header>
+
+      <!-- divider -->
+      <mat-divider></mat-divider>
+      <!--
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+      -->
+      <mat-card-content class="card-body">
+        <div class="">
+          This is a second test post for the feed section. I guess the alignments work good now.
+        </div>
+      </mat-card-content>
+
+      <!-- divider -->
+      <mat-divider></mat-divider>
+
+      <!-- card actions -->
+      <mat-card-actions class="m-auto">
+        <mat-list class="d-flex">
+          <mat-list-item>
+            <button mat-stroked-button class="downvote-btn btn mx-auto">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-list-item >
+          <mat-list-item>
+            <button mat-stroked-button class="comment-btn btn mx-auto">
+              <mat-icon>comment</mat-icon>
+            </button>
+          </mat-list-item>
+          <mat-list-item>
+            <button mat-stroked-button class="upvote-btn btn mx-auto">
+              <mat-icon>check</mat-icon>
+            </button>
+          </mat-list-item>
+        </mat-list>
+
+      </mat-card-actions>
+
+      <mat-card-footer class="card-footer ">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <input class="form-control comment-field" type="text">
+          </div>
+          <div class="col-2 m-auto">
+            <button type="button" mat-icon-button color="primary" class="btn">
+              <mat-icon >send</mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>
