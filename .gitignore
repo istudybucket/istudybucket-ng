@@ -43,3 +43,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# crazy
+crazy.sh
+*crazy.sh*
+commit-list.txt
+*commit-list.txt*
+stoopid.txt
+*stoopid.txt*
