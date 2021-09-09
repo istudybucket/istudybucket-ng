@@ -9,6 +9,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {ReactiveFormsModule} from "@angular/forms";
 import { FormTitleComponent } from './form-title/form-title.component';
 import { AuthComponent } from './auth/auth.component';
+import { FormBoxComponent } from './form-box/form-box.component';
 
 
 
@@ -17,7 +18,8 @@ import { AuthComponent } from './auth/auth.component';
     LoginFormComponent,
     RegisterFormComponent,
     FormTitleComponent,
-    AuthComponent
+    AuthComponent,
+    FormBoxComponent
   ],
   imports: [
     CommonModule,
@@ -27,11 +29,12 @@ import { AuthComponent } from './auth/auth.component';
     MatButtonModule,
     ReactiveFormsModule
   ],
-  exports: [
-    LoginFormComponent,
-    RegisterFormComponent,
-    FormTitleComponent,
-    AuthComponent
-  ]
+    exports: [
+        LoginFormComponent,
+        RegisterFormComponent,
+        FormTitleComponent,
+        AuthComponent,
+        FormBoxComponent
+    ]
 })
 export class AuthModule { }

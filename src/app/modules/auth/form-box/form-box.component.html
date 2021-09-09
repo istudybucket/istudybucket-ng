@@ -1,0 +1,32 @@
+<div class="row merged no-gutters">
+  <!-- feature row -->
+  <div class="col-lg-6 col-md-6 col-xs-12 d-none d-md-block d-sm-none">
+    <!-- feature area -->
+    <div class="feature-area">
+      <div class="land-meta d-block">
+        <!-- heading -->
+        <h1>iSB</h1>
+        <p>
+          iSB is a cool study platform for fake students
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- form row -->
+  <div class="col-lg-6 col-md-6 col-xs-12">
+    <div class="form-bg">
+      <!-- login form -->
+      <div class="form-area {{showLogin ? '' : 'd-none'}}">
+        <app-form-title title-heading="Login" title-body="body"></app-form-title>
+        <app-login-form (displayLog)="displayForm($event)"></app-login-form>
+      </div>
+
+      <!-- register form -->
+      <div class="form-area {{showLogin ? 'd-none' : ''}}">
+        <app-form-title title-heading="Register" title-body="body"></app-form-title>
+        <app-register-form (displayLog)="displayForm($event)" ></app-register-form>
+      </div>
+    </div>
+  </div>
+</div>

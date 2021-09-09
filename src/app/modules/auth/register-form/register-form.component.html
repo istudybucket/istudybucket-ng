@@ -1,5 +1,6 @@
 <form>
 
+  <!-- names -->
   <div class="row">
     <!-- first name -->
     <div class="col-lg-6 col-sm-6 form-group">
@@ -17,7 +18,11 @@
       </mat-form-field>
     </div>
 
-    <!-- email -->
+  </div>
+
+
+  <!-- email -->
+  <div class="row">
     <div class="col-lg-12 form-group">
       <mat-form-field class="form-control" appearance="legacy">
         <mat-label>Email</mat-label>
@@ -25,8 +30,10 @@
         <mat-icon matSuffix></mat-icon>
       </mat-form-field>
     </div>
+  </div>
 
-    <!-- username -->
+  <!-- username -->
+  <div class="row">
     <div class="col-lg-12 form-group">
       <mat-form-field class="form-control" appearance="legacy">
         <mat-label>Username</mat-label>
@@ -34,8 +41,10 @@
         <mat-icon matSuffix></mat-icon>
       </mat-form-field>
     </div>
+  </div>
 
-    <!-- password -->
+  <!-- password -->
+  <div class="row">
     <div class="col-lg-6 col-sm-6 form-group">
       <mat-form-field class="form-control" appearance="legacy">
         <mat-label>Password</mat-label>
@@ -52,14 +61,29 @@
         <mat-icon matSuffix></mat-icon>
       </mat-form-field>
     </div>
+  </div>
 
-    <!-- submit button -->
-    <div class="col-lg-12 form-group">
+  <!-- buttons -->
+  <div class="row">
+    <!-- reg button -->
+    <div class="col-lg-6 form-group">
       <div class="btn btn-block">
-        <button mat-raised-button color="primary" class="mat-form-button">Register</button>
+        <button type="button" mat-raised-button color="primary" class="mat-form-button">Register</button>
       </div>
     </div>
 
+    <!-- logswitch button -->
+    <div class="col-lg-6 form-group">
+      <div class="btn btn-block">
+        <button type="button"
+                mat-raised-button
+                color="accent"
+                (click)="switchToLogin()"
+                class="mat-form-button switch-btn">
+          Old? Login
+        </button>
+      </div>
+    </div>
   </div>
 
 </form>

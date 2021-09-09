@@ -1,0 +1,47 @@
+.feed-body {
+  padding: 0 16px;
+}
+
+
+.spacer {
+  flex: auto 1 1;
+}
+
+.downvote-btn {
+  color: rgba(210, 1, 1, 0.9);
+}
+
+.upvote-btn {
+  color: rgba(1, 210, 29, 0.9);
+}
+
+.comment-btn {
+  color: rgba(1, 46, 210, 0.9);
+}
+
+.downvote-btn,
+.upvote-btn,
+.comment-btn {
+  background-color: #f4f7f6;
+  width: 100%;
+  border-radius: 24px;
+  border-width: 0;
+}
+
+.author-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba2.jpg");
+  background-size: cover;
+}
+
+.post-action {
+  background-color: rgba(128, 128, 128, 0.42);
+  border-radius: 4px;
+}
+
+.comment-field{
+  border-radius: 16px;
+}
+
+mat-card-actions {
+  height: min-content;
+}

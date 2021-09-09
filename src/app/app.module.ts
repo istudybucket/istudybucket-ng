@@ -9,6 +9,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {AuthModule} from "./modules/auth/auth.module";
 import {NavModule} from "./modules/nav/nav.module";
+import {HomeModule} from "./modules/home/home.module";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {NavModule} from "./modules/nav/nav.module";
         MatIconModule,
         MatButtonModule,
         AuthModule,
-        NavModule
+        NavModule,
+        HomeModule
     ],
   providers: [],
   bootstrap: [AppComponent]

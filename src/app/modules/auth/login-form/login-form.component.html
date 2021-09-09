@@ -1,23 +1,43 @@
 <form>
-  <div class="form-group">
-    <mat-form-field appearance="legacy" class="form-control">
-      <mat-label>Username</mat-label>
-      <input matInput type="text" name="username">
-      <mat-icon matSuffix class=""></mat-icon>
-    </mat-form-field>
+  <!-- username -->
+  <div class="row mt-4 mb-4">
+    <div class="col-lg-12 form-group">
+      <mat-form-field appearance="legacy" class="form-control">
+        <mat-label>Username</mat-label>
+        <input matInput type="text" name="username">
+        <mat-icon matSuffix class=""></mat-icon>
+      </mat-form-field>
+    </div>
   </div>
-  <div class="form-group">
-    <mat-form-field appearance="legacy" class="form-control mat-form-control">
-      <mat-label>Password</mat-label>
-      <input matInput [type]="hidePassword ? 'password' : 'text'" name="password">
-      <button mat-icon-button matSuffix type="button" (click)="invertHide()" [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hidePassword">
-        <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
-      </button>
-    </mat-form-field>
+  <!-- password -->
+  <div class="row mt-4 mb-4">
+    <div class="col-lg-12 form-group">
+      <mat-form-field appearance="legacy" class="form-control">
+        <mat-label>Password</mat-label>
+        <input matInput [type]="hidePassword ? 'password' : 'text'" name="password">
+        <button mat-icon-button matSuffix type="button" (click)="invertHide()" [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hidePassword">
+          <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
   </div>
-  <div class="form-group">
-    <div class="btn btn-block">
-      <button mat-raised-button color="primary" class="mat-form-btn">Login</button>
+
+  <!-- submit button mt-4 mb-4 -->
+  <div class="row ">
+    <!-- buttons -->
+    <div class="col-lg-6 form-group">
+      <div class="btn btn-block">
+        <button type="button" mat-raised-button color="primary" class="mat-form-btn login-btn">Login</button>
+      </div>
+    </div>
+    <div class="col-lg-6 form-group cta">
+      <div class="btn btn-block">
+        <button type="button"
+                mat-raised-button
+                color="accent"
+                (click)="switchToRegister()"
+                class="mat-form-btn switch-btn">New? Register</button>
+      </div>
     </div>
   </div>
 </form>

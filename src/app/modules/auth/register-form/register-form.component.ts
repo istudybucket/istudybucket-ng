@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, Output, OnInit, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-register-form',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterFormComponent implements OnInit {
 
-  constructor() { }
+  @Output()
+  displayLog: EventEmitter<boolean>;
+
+  constructor() {
+    this.displayLog = new EventEmitter<boolean>(true)
+  }
 
   ngOnInit(): void {
+  }
+
+  switchToLogin() : void {
+    this.displayLog.emit(true);
   }
 
 }

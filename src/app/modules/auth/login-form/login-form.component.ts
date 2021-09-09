@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-login-form',
@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class LoginFormComponent implements OnInit {
   hidePassword: boolean;
 
+  @Output() displayLog : EventEmitter<boolean>;
+
   constructor() {
     this.hidePassword = true;
+    this.displayLog = new EventEmitter<boolean>(true);
   }
 
   ngOnInit(): void {
@@ -17,5 +20,9 @@ export class LoginFormComponent implements OnInit {
 
   invertHide() {
     this.hidePassword = !this.hidePassword;
+  }
+
+  switchToRegister() {
+    this.displayLog.emit(false)
   }
 }
