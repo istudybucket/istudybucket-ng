@@ -10,6 +10,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {AuthModule} from "./modules/auth/auth.module";
 import {NavModule} from "./modules/nav/nav.module";
 import {HomeModule} from "./modules/home/home.module";
+import {ChatModule} from "./modules/chat/chat.module";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HomeModule} from "./modules/home/home.module";
         MatButtonModule,
         AuthModule,
         NavModule,
-        HomeModule
+        HomeModule,
+        ChatModule
     ],
   providers: [],
   bootstrap: [AppComponent]
