@@ -27,14 +27,16 @@ mat-card {
   padding-left: 8px;
 }
 
+/*
 .friend-list > mat-list-item {
   border-radius: 8px;
 }
 
 .friend-list > mat-list-item:active {
   border-radius: 8px;
-}
 
+}
+*/
 mat-icon {
   background-color: #673ab7;
   color: white;
