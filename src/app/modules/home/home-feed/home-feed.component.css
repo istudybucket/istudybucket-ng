@@ -1,7 +1,6 @@
 .feed-body {
-  padding: 0 16px;
+  padding: 0 8px;
 }
-
 
 .spacer {
   flex: auto 1 1;
@@ -38,8 +37,14 @@
   border-radius: 4px;
 }
 
+.mat-form-field-outline {
+  border-radius: 24px;
+}
 .comment-field{
-  border-radius: 16px;
+  width: 100%;
+}
+.comment-icon {
+  transform: rotate(-45deg);
 }
 
 mat-card-actions {
