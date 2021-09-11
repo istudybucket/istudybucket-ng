@@ -1,17 +1,20 @@
-<aside >
-  <div class="bucket-menu">
+<aside class="">
+  <div class="bucket-menu overflow-auto">
     <mat-card class="bucket-card">
       <mat-card-header>
         <mat-card-title>Buckets</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <mat-nav-list class="bucket-list">
-          <mat-list-item *ngFor="let bucket of buckets">
-            <mat-icon mat-list-icon>group</mat-icon>
-            <div mat-line>{{ bucket.name }}</div>
-            <div mat-line>{{ bucket.size }}</div>
-          </mat-list-item>
-        </mat-nav-list>
+        <div class="">
+          <mat-nav-list class="bucket-list">
+            <mat-list-item *ngFor="let bucket of buckets">
+              <mat-icon mat-list-icon>group</mat-icon>
+              <div mat-line>{{ bucket.name }}</div>
+              <div mat-line>{{ bucket.size }}</div>
+              <mat-divider></mat-divider>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
       </mat-card-content>
     </mat-card>
   </div>
