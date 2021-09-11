@@ -1,0 +1,24 @@
+.gray-bg {
+  float: left;
+  width: 100%;
+}
+
+
+@media screen, (max-width: 980px) {
+  .gap {
+    padding: 16px 0;
+  }
+}
+
+.mid {
+  float: left;
+  padding: 0 16px;
+  position: relative;
+  width: 100%;
+  background: #f4f7f6;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
