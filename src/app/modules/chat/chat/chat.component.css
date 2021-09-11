@@ -13,7 +13,6 @@
 .mid {
   float: left;
   padding: 0 16px;
-  position: relative;
   width: 100%;
   background: #f4f7f6;
 }
@@ -22,3 +21,5 @@
   padding-left: 0;
   padding-right: 0;
 }
+
+
