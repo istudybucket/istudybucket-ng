@@ -5,12 +5,16 @@
         <mat-card-title>Buckets</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <mat-nav-list class="friend-list">
-          <mat-list-item *ngFor="let friend of friends">
-            <mat-icon mat-list-icon>group</mat-icon>
-            <div mat-line>{{ friend.username }}</div>
-          </mat-list-item>
-        </mat-nav-list>
+        <div class=" overflow-auto">
+          <mat-nav-list class="friend-list">
+            <mat-list-item *ngFor="let friend of friends">
+              <mat-icon mat-list-icon>group</mat-icon>
+              <div mat-line>{{ friend.username }}</div>
+              <mat-divider></mat-divider>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
+
       </mat-card-content>
     </mat-card>
   </div>
