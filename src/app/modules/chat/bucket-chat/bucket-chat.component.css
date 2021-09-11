@@ -27,6 +27,7 @@ mat-card {
   padding-left: 8px;
 }
 
+/*
 .bucket-list > mat-list-item {
   border-radius: 8px;
 }
@@ -35,7 +36,20 @@ mat-card {
   border-radius: 8px;
 }
 
+ */
+
 mat-icon {
   background-color: #673ab7;
   color: white;
+}
+
+.test {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.hmmm {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
