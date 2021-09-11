@@ -1,0 +1,33 @@
+mat-card {
+  box-shadow: none;
+  background: #f4f7f6;
+}
+
+.you {
+  justify-content: end;
+}
+
+.not-you {
+  justify-content: start;
+}
+
+.you > mat-list-item{
+  direction: rtl;
+  text-align: right;
+  background: white;
+}
+
+.not-you > mat-list-item{
+  direction: ltr;
+  align-self: start;
+  color:white;
+  background: #673ab7;
+}
+
+.you > mat-list-item,
+.not-you > mat-list-item {
+  width: fit-content;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+}
