@@ -1,0 +1,55 @@
+/*
+.bucket-menu:after {
+  box-shadow: 20px 0 20px -20px #001f9c inset;
+  content: "";
+  height: 100%;
+  top: 0;
+  right: -20px;
+  width: 20px;
+}
+
+.bucket-menu {
+  background: none repeat scroll 0 0 #f0f1f5;
+  height: content-box;
+  width: 100%;
+}
+
+ */
+
+mat-card {
+  width: 100%;
+  border-radius: 0;
+  padding: 16px 0 0;
+}
+
+.bucket-list {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+/*
+.bucket-list > mat-list-item {
+  border-radius: 8px;
+}
+
+.bucket-list > mat-list-item:active {
+  border-radius: 8px;
+}
+
+ */
+
+mat-icon {
+  background-color: #673ab7;
+  color: white;
+}
+
+.test {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.hmmm {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
