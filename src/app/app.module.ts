@@ -11,24 +11,36 @@ import {AuthModule} from "./modules/auth/auth.module";
 import {NavModule} from "./modules/nav/nav.module";
 import {HomeModule} from "./modules/home/home.module";
 import {ChatModule} from "./modules/chat/chat.module";
+import {SharedModule} from "./modules/shared.module";
+import {RouterModule} from "@angular/router";
+import { MATERIAL_SANITY_CHECKS} from "@angular/material/core";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatIconModule,
-        MatButtonModule,
-        AuthModule,
-        NavModule,
-        HomeModule,
-        ChatModule
-    ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [
+    SharedModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
+    AuthModule,
+    NavModule,
+    HomeModule,
+    ChatModule,
+    RouterModule
+  ],
+  providers: [
+    {
+      provide: MATERIAL_SANITY_CHECKS,
+      useValue: false
+    }
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
