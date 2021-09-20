@@ -6,24 +6,23 @@
   flex: auto 1 1;
 }
 
-.downvote-btn {
-  color: rgba(210, 1, 1, 0.9);
+.upvote-btn {
+  color: #2c8a83;
 }
 
-.upvote-btn {
-  color: rgba(1, 210, 29, 0.9);
+.downvote-btn {
+  color: #99ddff;
 }
 
 .comment-btn {
-  color: rgba(1, 46, 210, 0.9);
+  color: #00458b;
 }
 
 .downvote-btn,
 .upvote-btn,
 .comment-btn {
-  background-color: #f4f7f6;
-  width: 100%;
-  border-radius: 24px;
+  /*background-color: #f4f7f6;
+  border-radius: 24px;*/
   border-width: 0;
 }
 
@@ -47,6 +46,5 @@
   transform: rotate(-45deg);
 }
 
-mat-card-actions {
-  height: min-content;
-}
+
+
