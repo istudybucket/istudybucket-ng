@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+/*
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+*/
+
+@use "~@angular/material" as mat;
+
+@include mat.core();
+
+$isb-contrast : (
+  50: rgba(white, .05),
+  100: rgba(white, 0.1),
+  200: rgba(white, 0.2),
+  300: rgba(white, 0.3),
+  400: rgba(white, 0.4),
+  500: rgba(white, 0.5),
+  600: rgba(white, 0.6),
+  700: rgba(white, 0.7),
+  800: rgba(white, 0.8),
+  900: rgba(white, 0.9),
+);
+$main-palette : (
+  50: #08312d,
+  100: #0b4945,
+  200: #0c645d,
+  300: #10756c,
+  400: #178a81,
+  500: #139b91,
+  600: #19b9ad,
+  700: #1fdccd,
+  800: #22f1e1,
+  900: #3effef,
+  contrast: $isb-contrast
+);
+$secondary-palette : (
+  50: #1a85f8,
+  100: #0a7ff1,
+  200: #0272e1,
+  300: #0069d0,
+  400: #0057ad,
+  500: #004b96,
+  600: #003e7c,
+  700: #002a56,
+  800: #001d3b,
+  900: #001225,
+  contrast: $isb-contrast
+);
+
+
+$isb-primary: mat.define-palette($main-palette);
+$isb-accent: mat.define-palette($secondary-palette);
+$isb-warn: mat.define-palette(mat.$red-palette);
+
+$isb-theme: mat.define-light-theme(
+    $isb-primary,
+    $isb-accent,
+    $isb-warn
+);
+
+html, body {  }
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

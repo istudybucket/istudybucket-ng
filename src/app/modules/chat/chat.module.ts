@@ -3,10 +3,8 @@ import { CommonModule } from '@angular/common';
 import { PrivateChatComponent } from './private-chat/private-chat.component';
 import { BucketChatComponent } from './bucket-chat/bucket-chat.component';
 import { ChatComponent } from './chat/chat.component';
-import {MatCardModule} from "@angular/material/card";
-import {MatListModule} from "@angular/material/list";
-import {MatIconModule} from "@angular/material/icon";
 import { ChatBodyComponent } from './chat-body/chat-body.component';
+import {SharedModule} from "../shared.module";
 
 
 
@@ -22,9 +20,7 @@ import { ChatBodyComponent } from './chat-body/chat-body.component';
     ],
     imports: [
         CommonModule,
-        MatCardModule,
-        MatListModule,
-        MatIconModule
+      SharedModule
     ]
 })
 export class ChatModule { }
