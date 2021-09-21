@@ -14,6 +14,7 @@ import {ChatModule} from "./modules/chat/chat.module";
 import {SharedModule} from "./modules/shared.module";
 import {RouterModule} from "@angular/router";
 import { MATERIAL_SANITY_CHECKS} from "@angular/material/core";
+import {ProfileModule} from "./modules/profile/profile.module";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MATERIAL_SANITY_CHECKS} from "@angular/material/core";
     NavModule,
     HomeModule,
     ChatModule,
+    ProfileModule,
     RouterModule
   ],
   providers: [
