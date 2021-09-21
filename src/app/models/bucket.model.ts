@@ -1,9 +1,19 @@
 export class Bucket {
-  name: string;
-  size: number;
 
-  constructor(name: string, size: number) {
-    this.name = name;
+  title: string;
+  description: string;
+  creatorName: string;
+  size: number;
+  groupImage: string;
+  creationDate: string;
+
+  constructor(title: string, description: string, creatorName: string, size: number, groupImage: string, creationDate: string) {
+    this.title = title;
+    this.description = description;
+    this.creatorName = creatorName;
     this.size = size;
+    this.groupImage = groupImage;
+    this.creationDate = creationDate;
   }
+
 }
