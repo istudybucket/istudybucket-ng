@@ -10,7 +10,12 @@ import {MatListModule} from "@angular/material/list";
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import {AppRoutingModule} from "./app-routing/app-routing.module";
+import {AppRoutingModule} from "./app-routing.module";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {MatMenuModule} from "@angular/material/menu";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatBadgeModule} from "@angular/material/badge";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [],
@@ -25,6 +30,12 @@ import {AppRoutingModule} from "./app-routing/app-routing.module";
     MatListModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatBadgeModule,
+    MatGridListModule,
+    LayoutModule,
+    MatMenuModule,
+    MatDividerModule,
+    FlexLayoutModule,
     LayoutModule,
     ReactiveFormsModule,
     FormsModule
@@ -40,6 +51,11 @@ import {AppRoutingModule} from "./app-routing/app-routing.module";
     MatListModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatBadgeModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatDividerModule,
+    FlexLayoutModule,
     LayoutModule,
     ReactiveFormsModule,
     FormsModule
