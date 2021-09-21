@@ -1,0 +1,96 @@
+@use "~@angular/material" as mat;
+
+@include mat.core();
+
+$isb-contrast : (
+  50: rgba(white, .05),
+  100: rgba(white, 0.1),
+  200: rgba(white, 0.2),
+  300: rgba(white, 0.3),
+  400: rgba(white, 0.4),
+  500: rgba(white, 0.5),
+  600: rgba(white, 0.6),
+  700: rgba(white, 0.7),
+  800: rgba(white, 0.8),
+  900: rgba(white, 0.9),
+);
+
+$main-v1-palette : (
+  50: #08312d,
+  100: #0b4945,
+  200: #0c645d,
+  300: #10756c,
+  400: #178a81,
+  500: #139b91,
+  600: #19b9ad,
+  700: #1fdccd,
+  800: #22f1e1,
+  900: #3effef,
+  contrast: $isb-contrast
+);
+
+$main-palette : (
+  50: rgba(176, 209, 255, 0.95),
+  100: rgba(137, 187, 255, 0.95),
+  200: rgba(113, 173, 255, 0.95),
+  300: rgba(83, 154, 253, 0.95),
+  400: rgba(56, 140, 255, 0.95),
+  500: rgba(38, 125, 255, 0.95),
+  600: rgba(17, 113, 255, 0.95),
+  700: rgba(2, 96, 236, 0.95),
+  800: rgba(0, 75, 189, 0.95),
+  900: rgba(2, 57, 138, 0.95),
+  contrast: $isb-contrast
+);
+
+$secondary-palette : (
+  50: rgba(212, 255, 232, 0.95),
+  100: rgba(176, 255, 215, 0.95),
+  200: rgba(145, 245, 192, 0.95),
+  300: rgba(113, 238, 172, 0.95),
+  400: rgba(72, 227, 145, 0.95),
+  500: rgba(41, 215, 123, 0.95),
+  600: rgba(25, 180, 98, 0.95),
+  700: rgba(16, 143, 76, 0.95),
+  800: rgba(11, 103, 54, 0.95),
+  900: rgba(1, 77, 37, 0.95),
+  contrast: $isb-contrast
+);
+
+$main-dark-palette: (
+  50: #1C1C1BFF,
+  100: #1C1C1BFF,
+  200: #1C1C1BFF,
+  300: #1C1C1BFF,
+  400: #1C1C1BFF,
+  500: #1C1C1BFF,
+  600: #1C1C1BFF,
+  700: #1C1C1BFF,
+  800: #1C1C1BFF,
+  900: #1C1C1BFF,
+  contrast: $isb-contrast
+);
+$secondary-dark-palette: (
+  50: #b44a74,
+  100: #b44a74,
+  200: #b44a74,
+  300: #b44a74,
+  400: #b44a74,
+  500: #b44a74,
+  600: #b44a74,
+  700: #b44a74,
+  800: #b44a74,
+  900: #b44a74,
+  contrast: $isb-contrast
+);
+
+$isb-primary: mat.define-palette($main-palette);
+$isb-accent: mat.define-palette($secondary-palette);
+$isb-warn: mat.define-palette(mat.$red-palette);
+
+$isb-light-theme: mat.define-light-theme($isb-primary, $isb-accent, $isb-warn);
+
+@include mat.core-theme($isb-light-theme);
+@include mat.button-theme($isb-light-theme);
+
+@include mat.all-component-themes($isb-light-theme);
