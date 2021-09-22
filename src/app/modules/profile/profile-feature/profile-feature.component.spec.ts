@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavLogoComponent } from './nav-logo.component';
+import { ProfileFeatureComponent } from './profile-feature.component';
 
-describe('NavLogoComponent', () => {
-  let component: NavLogoComponent;
-  let fixture: ComponentFixture<NavLogoComponent>;
+describe('ProfileFeatureComponent', () => {
+  let component: ProfileFeatureComponent;
+  let fixture: ComponentFixture<ProfileFeatureComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavLogoComponent ]
+      declarations: [ ProfileFeatureComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavLogoComponent);
+    fixture = TestBed.createComponent(ProfileFeatureComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

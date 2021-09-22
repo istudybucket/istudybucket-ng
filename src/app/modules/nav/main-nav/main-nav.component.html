@@ -1,57 +1,35 @@
-<div>
-  <mat-toolbar color="primary">
-    <mat-nav-list class="d-flex">
-      <mat-list-item>
-        <a matLine routerLink="/home"></a>
-        <button mat-icon-button>
-          <mat-icon>menu</mat-icon>
-        </button>
-      </mat-list-item>
-      <mat-list-item>
-        <a matLine href=""></a>
-        <button mat-icon-button>
-          <mat-icon>account_circle</mat-icon>
-        </button>
-      </mat-list-item>
-    </mat-nav-list>
+<mat-toolbar color="primary" fxLayout="row">
+  <span fxFlex>{{title}}</span>
+  <mat-nav-list class="d-flex" fxHide.xs>
+    <mat-list-item
+      fxHide.xs
+      *ngFor="let menuItem of menuItems">
+      <a routerLink="/{{menuItem.routerLink}}" routerLinkActive="active">
+        <button
+          matBadge="{{menuItem.badgeValue}}"
+          matBadgeSize="small"
+          [matBadgeHidden]="isBadgeHidden(menuItem.badgeValue)"
+          mat-icon-button>
+          <mat-icon>{{menuItem.icon}}</mat-icon>
 
-    <span class="spacer"></span>
-
-    <mat-nav-list class="d-flex">
-      <mat-list-item>
-        <a matLine routerLink="/home"></a>
-        <button mat-icon-button>
-          <mat-icon>home</mat-icon>
         </button>
-      </mat-list-item>
+      </a>
+    </mat-list-item>
+  </mat-nav-list>
 
-      <mat-list-item>
-        <a matLine routerLink="/home"></a>
-        <button mat-icon-button>
-          <mat-icon>people</mat-icon>
-        </button>
-      </mat-list-item>
+  <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs>
+    <mat-icon>menu</mat-icon>
+  </button>
 
-      <mat-list-item>
-        <a matLine routerLink="/chat"></a>
-        <button mat-icon-button>
-          <mat-icon>forum</mat-icon>
-        </button>
-      </mat-list-item>
+  <mat-menu #dropMenu="matMenu">
+    <ng-container *ngFor="let menuItem of menuItems">
 
-      <mat-list-item>
-        <a matLine routerLink="/home"></a>
-        <button mat-icon-button>
-          <mat-icon>notifications</mat-icon>
-        </button>
-      </mat-list-item>
+      <button type="button" mat-menu-item>
+        <mat-icon class="mr">{{menuItem.icon}}</mat-icon>
+        <span>{{menuItem.label}}</span>
 
-      <mat-list-item>
-        <a matLine routerLink="/home"></a>
-        <button mat-icon-button>
-          <mat-icon>search</mat-icon>
-        </button>
-      </mat-list-item>
-    </mat-nav-list>
-  </mat-toolbar>
-</div>
+      </button>
+      <mat-divider></mat-divider>
+    </ng-container>
+  </mat-menu>
+</mat-toolbar>

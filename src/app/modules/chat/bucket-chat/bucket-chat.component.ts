@@ -12,16 +12,14 @@ export class BucketChatComponent implements OnInit {
 
   constructor() {
     this.buckets = [
-      new Bucket("Example Bucket 1", 100),
-      new Bucket("Example Bucket 2", 100),
-      new Bucket("Example Bucket 3", 100),
-      new Bucket("Example Bucket 4", 100),
-      new Bucket("Example Bucket 5", 100),
-      new Bucket("Example Bucket 1", 100),
-      new Bucket("Example Bucket 2", 100),
-      new Bucket("Example Bucket 3", 100),
-      new Bucket("Example Bucket 4", 100),
-      new Bucket("Example Bucket 5", 100),
+      new Bucket(
+        "Example",
+        "Description",
+        "Elroy Kanye",
+        3,
+        "group-image",
+        "21-02-2021",
+        ),
     ];
   }
 

@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      {{user.firstName + " " + user.lastName}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{user.username}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+
+  <mat-card-content class="card-body">
+    <div class="d-block text-center">
+asdas
+    </div>
+  </mat-card-content>
+
+  <mat-divider></mat-divider>
+  <mat-card-actions>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let item of profileActions">
+        <span mat-line>{{item.label}}</span>
+        <span class="spacer"></span>
+        <mat-icon >{{item.icon}}</mat-icon>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-card-actions>
+</mat-card>

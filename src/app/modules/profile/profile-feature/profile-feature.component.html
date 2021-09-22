@@ -1,0 +1,12 @@
+<div>
+  <mat-toolbar>
+    <mat-nav-list class="d-flex align-items-center">
+      <mat-list-item *ngFor="let menuItem of menuItems">
+        <button mat-button>
+          {{menuItem.label}}
+
+        </button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-toolbar>
+</div>
