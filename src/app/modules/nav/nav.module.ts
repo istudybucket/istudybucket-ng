@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 import {AuthModule} from "../auth/auth.module";
 import { MainNavComponent } from './main-nav/main-nav.component';
 import {SharedModule} from "../shared.module";
+import { NavHeaderComponent } from './nav-header/nav-header.component';
 
 
 
 @NgModule({
-    declarations: [MainNavComponent],
+    declarations: [
+      MainNavComponent, NavHeaderComponent
+    ],
     exports: [
-        MainNavComponent
+      MainNavComponent,
+      NavHeaderComponent
     ],
   imports: [
     CommonModule,

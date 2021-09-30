@@ -5,6 +5,7 @@ import { HomeSidebarComponent } from './home-sidebar/home-sidebar.component';
 import { HomeFeedComponent } from './home-feed/home-feed.component';
 import { HomeComponent } from './home/home.component';
 import { HomeSidemenuComponent } from './home-sidemenu/home-sidemenu.component';
+import {AppGlobalModule} from "../app-global/app-global.module";
 
 @NgModule({
     declarations: [
@@ -18,9 +19,10 @@ import { HomeSidemenuComponent } from './home-sidemenu/home-sidemenu.component';
       HomeFeedComponent,
       HomeSidebarComponent
     ],
-  imports: [
-    CommonModule,
-    SharedModule
-  ]
+    imports: [
+        CommonModule,
+        SharedModule,
+        AppGlobalModule
+    ]
 })
 export class HomeModule { }

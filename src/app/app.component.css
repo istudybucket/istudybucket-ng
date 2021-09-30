@@ -1,9 +1,20 @@
-#isb-navbar {
-  overflow: hidden;
+@media (min-width: 991px) {
+  .main-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+  }
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.main-wrapper {
+  opacity: 1;
+  transition: all .25s ease-in;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
