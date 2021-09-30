@@ -17,6 +17,7 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatGridListModule} from "@angular/material/grid-list";
 
+
 @NgModule({
   declarations: [],
   imports: [
@@ -58,7 +59,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
     FlexLayoutModule,
     LayoutModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class SharedModule { }
