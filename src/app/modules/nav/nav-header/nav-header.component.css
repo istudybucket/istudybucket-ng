@@ -1,0 +1,40 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  /*align-items: center;
+  height: 96px;
+  padding: 0 15px;
+  background: #fff;
+  border-bottom: 2px #eee solid;
+  transition: left .25s;*/
+}
+
+.topbar {
+  border-bottom: 1px solid #e1e8ed;
+  display: inline-block;
+  width: 100%;
+  background: #f5f5f5;
+  padding: 8px 16px;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search-bar {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+
+@media (min-width: 991px){
+  search-bar {
+    width: 300px;
+  }
+
+}
