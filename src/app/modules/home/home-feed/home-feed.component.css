@@ -2,49 +2,5 @@
   padding: 0 8px;
 }
 
-.spacer {
-  flex: auto 1 1;
-}
-
-.upvote-btn {
-  color: #5a37ff;
-}
-
-.downvote-btn {
-  color: #ff2bbb;
-}
-
-.comment-btn {
-  color: #8c8c8c;
-}
-
-.downvote-btn,
-.upvote-btn,
-.comment-btn {
-  /*background-color: #f4f7f6;
-  border-radius: 24px;*/
-  border-width: 0;
-}
-
-.author-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba2.jpg");
-  background-size: cover;
-}
-
-.post-action {
-  background-color: rgba(128, 128, 128, 0.42);
-  border-radius: 4px;
-}
-
-.mat-form-field-outline {
-  border-radius: 24px;
-}
-.comment-field{
-  width: 100%;
-}
-.comment-icon {
-  transform: rotate(-45deg);
-}
-
 
 
