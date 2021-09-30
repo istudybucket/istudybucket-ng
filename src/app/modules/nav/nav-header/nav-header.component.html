@@ -1,0 +1,44 @@
+<header>
+  <div class="topbar sticky d-flex">
+    <div class="logo">
+      <span>ISB</span>
+    </div>
+
+    <span class="spacer"></span>
+
+    <mat-list class="d-flex" fxHide.xs>
+      <mat-list-item
+        *ngFor="let menuItem of menuItems"
+        fxHide.xs>
+        <a routerLink="/{{menuItem.routerLink}}" routerLinkActive="active">
+          <button
+            matBadge="{{menuItem.badgeValue}}"
+            matBadgeSize="small"
+            [matBadgeHidden]="isBadgeHidden(menuItem.badgeValue)"
+            mat-icon-button class="btn">
+            <mat-icon>{{menuItem.icon}}</mat-icon>
+          </button>
+        </a>
+      </mat-list-item>
+    </mat-list>
+
+
+    <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs>
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #dropMenu="matMenu">
+      <ng-container *ngFor="let menuItem of menuItems">
+
+        <button type="button" mat-menu-item>
+          <mat-icon class="mr">{{menuItem.icon}}</mat-icon>
+          <span>{{menuItem.label}}</span>
+
+        </button>
+        <mat-divider></mat-divider>
+      </ng-container>
+    </mat-menu>
+
+  </div>
+
+</header>
